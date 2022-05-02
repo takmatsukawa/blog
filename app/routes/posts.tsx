@@ -1,15 +1,13 @@
 import {
-    Link,
     Outlet,
-    useLoaderData,
 } from "@remix-run/react";
 
 export default function Posts() {
     return (
-        <div>
-            <main className="col-span-4 md:col-span-3">
+        <main className="mt-10 container mx-auto max-w-5xl">
+            <article className="prose prose-slate">
                 <Outlet />
-            </main>
-        </div>
+            </article>
+        </main>
     )
 }
