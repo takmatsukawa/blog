@@ -32,14 +32,14 @@ export default function App() {
         <Links />
       </head>
       <body className="h-full">
-      <header className="py-10 border-b">
+      <header className="py-10 border-b px-5">
         <div className="contaimer mx-auto max-w-5xl"> 
         <Link to="/" className="text-4xl text-gray-700">/dev/kawauso7c</Link>
         <p className="text-gray-800 mt-3 text-sm">Daily life in Japan</p>
         </div>
 
       </header>
-      <div className="pb-52">
+      <div className="pb-48 px-5">
       <Outlet />
       </div>
         <ScrollRestoration />
