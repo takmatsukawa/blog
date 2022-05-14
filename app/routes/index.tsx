@@ -3,6 +3,7 @@ import { Link, useLoaderData } from "@remix-run/react";
 
 import * as post1 from "./posts/example-markdown.mdx";
 import * as post2 from "./posts/tama-new-town.mdx";
+import * as post3 from "./posts/constructive-career-outlook.mdx";
 
 type Module = {
   filename: string,
@@ -30,6 +31,7 @@ type LoaderData = {
 export async function loader() {
   return json<LoaderData>({
     posts: [
+      postFromModule(post3),
       postFromModule(post2),
       postFromModule(post1),
     ]
